@@ -57,20 +57,9 @@ namespace Scan_util
                 extension = fileList[i].Extension;
                 try
                 {
-                    using (var reader = fileList[i].OpenRead())
-                    {
-                        if (reader.CanRead == false)
-                        {
-                            flag = false;
-                            errorsCount++;
-                        }
-                    }
                     using (var reader = new StreamReader(fileList[i].FullName))
                     {
-
                         TextFromFile = reader.ReadToEnd();
-
-
                     }
                 }
                 catch (Exception)
