@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Scan_util": {
+      "commandName": "Project",
+      "commandLineArgs": "%userprofile%\\Desktop"
+    }
+  }
+}
